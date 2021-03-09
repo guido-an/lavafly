@@ -1,0 +1,803 @@
+/*! HTML5 Boilerplate v8.0.0 | MIT License | https://html5boilerplate.com/ */
+
+/* main.css 2.1.0 | MIT License | https://github.com/h5bp/main.css#readme */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+  resize: vertical;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+   :root {
+    --blue: #62FCF7;
+    --brown: #7E3838;
+    --red: #FA4605;
+    --yellow: #EDB905
+  }
+
+   html, body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    scroll-behavior: smooth;
+    font-size: 16px;
+   }
+
+   ul li {
+     list-style: none;
+   }
+
+   ul li a {
+    text-decoration: none;
+   }
+
+   .overtitle-section {
+    color: #777;
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+  }
+   .overtitle-section-secondary {
+    color: var(--yellow);
+    font-size: 15px;
+    position: relative;
+    top: 20px;
+  }
+
+   /* ==========================================================================
+   HERO
+   ========================================================================== */
+
+   #hero-container {
+     height: 100vh;
+     width: 100vw;
+     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('/img/parapente-lanzarote-lavafly.jpg');
+     background-position: left;
+     background-size: cover;
+     display: flex;
+     padding: 20px;
+     justify-content: space-between;
+   }
+    #hero-container header li a {
+     color: #fff
+   }
+   #nav-mobile {
+     display: none
+   }
+   #logo-container {
+     position:relative;
+     bottom: 10px;
+   }
+
+   #logo-container img {
+    height: 100px
+   }
+
+   #burger-icon {
+     position: relative;
+     right: 40px;
+     top: 10px
+   }
+
+   #burger-icon div {
+     height: 2px;
+     background-color: #fff;
+     width: 35px;
+     margin-bottom: 5px
+   }
+   #closing-menu-icon {
+     display: none;
+     font-size: 32px;
+     color: #fff;
+     position: relative;
+     bottom: 10px;
+     right: 120px;
+   }
+
+  #nav-mobile {
+    background-color: #fff;
+    width: 110vw;
+    /* height: 40vh; */
+    z-index: 99;
+    position: relative;
+    right: 35px;
+  }
+  #nav-desktop {
+    display: none
+  }
+
+  #nav-mobile ul li {
+    margin-bottom: 7px;
+  }
+  #nav-mobile ul li:first-child {
+    padding-top: 20px;
+  }
+  #nav-mobile ul li:last-child {
+    padding-bottom: 20px;
+  }
+
+  #nav-mobile ul li a {
+    font-weight: 500;
+    font-size: 15px;
+    color: #222;
+
+    padding: 10px 20px;
+    display: block;
+    border-bottom: 2px solid #fafafa;
+    width: 80vw
+  }
+  #hero-text {
+    z-index: 2;
+    position: relative;
+    bottom: 80vh;
+    text-align: center;
+    color: #fff;
+  }
+  #hero-text h1 {
+    font-size: 42px;
+    line-height: 52px;
+  }
+
+  #overtitle-hero {
+    position: relative;
+    top: 30px;
+    font-size: 18px
+  }
+  #hero-text p {
+    /* font-size: 18px; */
+    font-weight: 500;
+  }
+  #lavafly {
+    color: var(--blue);
+  }
+  #hero-text a {
+    background-color: var(--brown);
+    padding: 10px 40px;
+    text-decoration: none;
+    color:#fff;
+    border-radius: 4px;
+    position: relative;
+    top: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+  }
+  @media(min-width: 768px){
+
+    #nav-desktop {
+      display: block;
+    }
+    #nav-mobile {
+      display: none !important;
+    }
+
+    #hero-container {
+      padding: 20px 4vw
+    }
+    #burger-icon div{
+      display: none
+    }
+    #nav-mobile {
+      display: flex
+    }
+    #logo-container img {
+      height: 120px
+     }
+     #nav-desktop ul {
+       display: flex;
+       position: relative;
+       left: 80px;
+       top: 10px;
+    }
+     #nav-desktop ul li {
+      margin-right: 60px
+    }
+     #nav-desktop ul li a {
+      font-weight: 500;
+      font-size: 15px;
+    }
+    #overtitle-hero {
+      font-size: 20px !important;
+    }
+    #hero-text h1 {
+      font-size: 62px;
+    }
+    #hero-text p {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    #my-header {
+      width: 100vw;
+      display: flex;
+    }
+
+  }
+
+  /* ==========================================================================
+   ABOUT
+   ========================================================================== */
+  #about {
+   position: relative;
+   bottom: 100px;
+   margin: 0 15px
+  }
+
+  #about-left img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px 3px hsla(0,0%,72.2%,0.5)
+  }
+  #about-right {
+    margin-top: 20px
+  }
+  #about-right span {
+    margin-top: 20px;
+
+  }
+  #about-right p {
+    color: #777;
+  }
+  .divider {
+    height: 3px;
+    width: 120px;
+    background-color: #f7f7f7;
+    position: relative;
+    bottom: 5px;
+    margin-bottom: 20px
+  }
+
+  @media(min-width: 1100px){
+    #about {
+      display: flex;
+      justify-content: space-evenly;
+      bottom: 120px;
+    }
+    #about-left,
+    #about-right{
+      width: 45%;
+    }
+  }
+
+  /* ==========================================================================
+   TANDEM FLIGHTS
+   ========================================================================== */
+#tandem-flights {
+  background-color: var(--brown);
+}
+#tandem-flights-left {
+  background: url('../img/paragliding-tandem-flights.jpg');
+  height: 500px;
+ background-size: cover;
+ background-position: center;
+}
+#tandem-flights h2 {
+  color:  var(--blue)
+}
+#tandem-flights p {
+  color: #f7f7f7
+}
+
+#tandem-flights ul li {
+  color: #fff;
+  font-size: 15px;
+}
+#flight-areas {
+  margin-top: 40px
+}
+#flight-areas ol,
+#flight-prices ul {
+  position: relative;
+  bottom: 10px
+}
+#flight-areas ol li{
+  color: #fff;
+  font-size: 15px;
+}
+#flight-prices {
+  margin-top: 20px
+}
+#tandem-flights-right {
+  padding: 20px 15px 60px
+}
+#tandem-flights h4 {
+   color: var(--blue)
+}
+#tandem-flights ul li:last-child {
+   margin-top: 20px;
+}
+#discount-resident {
+  font-size: 14px;
+  margin-top: 40px;
+}
+@media(min-width:968px){
+  #tandem-flights {
+    margin-top: 60px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #flights-second-container {
+    display: flex;
+    justify-content: space-around;
+  }
+  #tandem-flights-left {
+    width: 49vw;
+    height: 550px;
+  }
+
+  #tandem-flights-right {
+    width: 45vw;
+    position: relative;
+    top: 10px;
+  }
+  #flight-prices {
+    position: relative;
+    bottom: 20px;
+  }
+  #flight-prices ul {
+    position: relative;
+    right: 20px;
+  }
+  #flight-areas {
+    position: relative;
+    bottom: 40px;
+  }
+  #tandem-flights-right  {
+    padding: 20px 25px 60px
+  }
+  #tandem-flights-right p  {
+    width: 90%;
+  }
+}
+
+ /* ==========================================================================
+   GIFT CARD
+   ========================================================================== */
+  #gift-card {
+    background-color: var(--brown);
+    position: relative;
+    padding: 20px 15px 80px
+  }
+  #gift-card h3 {
+    color: var(--blue)
+  }
+  #gift-card p {
+    color: #fff
+  }
+  #gift-card a {
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: #222;
+    padding: 10px 35px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  @media(min-width: 968px){
+    #gift-card {
+      display: flex;
+      justify-content: space-between;
+      padding: 40px 15vw 80px
+    }
+    #gift-card-left {
+      width: 60%;
+    }
+  }
+  /* ==========================================================================
+   GALLERY
+   ========================================================================== */
+.gallery-item {
+  padding: 3px
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+@media(min-width: 768px){
+  #gallery {
+    display: flex;
+  }
+}
+
+/* ==========================================================================
+   FAQ
+   ========================================================================== */
+
+  #faq {
+    margin: 40px 15px 60px;
+  }
+   summary {
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #fff;
+    color: #333;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    outline: none;
+    border-radius: 0.25rem;
+    text-align: left;
+    cursor: pointer;
+    position: relative;
+  }
+  details > summary::after {
+    position: absolute;
+    content: "+";
+    right: 20px;
+  }
+  details[open] > summary::after {
+    position: absolute;
+    content: "-";
+    right: 20px;
+  }
+  details > summary::-webkit-details-marker {
+    display: none;
+  }
+
+  details[open] summary ~ * {
+    animation: sweep .5s ease-in-out;
+  }
+  @keyframes sweep {
+    0%    {opacity: 0; margin-top: -10px}
+    100%  {opacity: 1; margin-top: 0px}
+  }
+
+  .faq__content p {
+    color: #777;
+    font-size: 15px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  @media(min-width: 968px){
+    #faq {
+      margin: 60px 20vw 60px;
+
+    }
+  }
+
+  /* ==========================================================================
+   FOOTER
+   ========================================================================== */
+ #contact {
+   background-color: var(--brown);
+ }
+ #logo-footer {
+   background-color: var(--brown);
+   width: 120px;
+   display: block;
+   margin: 0 auto;
+   padding: 40px 0 0;
+ }
+
+ #contact-footer {
+   margin-top: 20px;
+   text-align: center;
+ }
+ #contact-footer img {
+   width: 24px;
+ }
+ #contact-footer h2 {
+   color: var(--blue);
+ }
+ #contact-footer p {
+   color: #fff;
+   position: relative;
+   bottom: 10px;
+ }
+
+ #contact-footer a {
+   color: #fff;
+   margin: 0 auto;
+   position: relative;
+   left: 5px;
+   text-decoration: none;
+ }
+
+ #whatsapp {
+  position: relative;
+  top: 10px;
+}
+
+
+ #social-icons {
+   display: flex;
+   justify-content: center;
+   margin-top: 80px;
+   padding-bottom: 60px;
+ }
+
+
+ @media(min-width: 968px){
+  #contact {
+    margin: 120px 4vw 40px;
+    border-radius: 8px;
+    box-shadow:  0px 2px 20px 3px hsla(0,0%,72.2%,0.8);
+
+  }
+
+  #contact-footer p {
+    width: 40%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+  }
+
+  #social-icons {
+
+    padding-bottom: 80px;
+  }
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden,
+[hidden] {
+  display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  /* 1 */
+}
+
+/*
+ * Extends the .sr-only class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+  visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+  *,
+  *::before,
+  *::after {
+    background: #fff !important;
+    color: #000 !important;
+    /* Black prints faster */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+
+  a[href]::after {
+    content: " (" attr(href) ")";
+  }
+
+  abbr[title]::after {
+    content: " (" attr(title) ")";
+  }
+
+  /*
+   * Don't show links that are fragment identifiers,
+   * or use the `javascript:` pseudo protocol
+   */
+  a[href^="#"]::after,
+  a[href^="javascript:"]::after {
+    content: "";
+  }
+
+  pre {
+    white-space: pre-wrap !important;
+  }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+
+  /*
+   * Printing Tables:
+   * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
+   */
+  thead {
+    display: table-header-group;
+  }
+
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+
