@@ -177,10 +177,11 @@ textarea {
   #nav-mobile {
     background-color: #fff;
     width: 110vw;
-    /* height: 40vh; */
+    /* height: 700px; */
     z-index: 99;
     position: relative;
     right: 35px;
+    bottom: 20px
   }
   #nav-desktop {
     display: none
@@ -206,6 +207,7 @@ textarea {
     border-bottom: 2px solid #fafafa;
     width: 80vw
   }
+
   #hero-text {
     z-index: 2;
     position: relative;
@@ -241,6 +243,12 @@ textarea {
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
+    transition: padding 0.1s;
+  }
+
+  #hero-text a:hover {
+    padding: 12px 45px;
+
   }
   @media(min-width: 768px){
 
@@ -272,6 +280,10 @@ textarea {
      #nav-desktop ul li {
       margin-right: 60px
     }
+    #nav-desktop ul li a:hover {
+      border-bottom: 2px solid var(--blue);
+      padding-bottom: 5px
+     }
      #nav-desktop ul li a {
       font-weight: 500;
       font-size: 15px;
@@ -286,6 +298,8 @@ textarea {
       font-size: 18px;
       font-weight: 400;
     }
+
+
 
     #my-header {
       width: 100vw;
@@ -457,6 +471,12 @@ textarea {
     margin-top: 40px;
     font-size: 12px;
     font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: padding 0.1s;
+  }
+
+  #gift-card a:hover {
+    padding: 12px 38px ;
   }
   @media(min-width: 968px){
     #gift-card {
@@ -582,6 +602,9 @@ textarea {
   position: relative;
   top: 10px;
 }
+#whatsapp a:hover {
+  color: #fafafa
+}
 
 
  #social-icons {
@@ -590,6 +613,11 @@ textarea {
    margin-top: 80px;
    padding-bottom: 60px;
  }
+
+ #social-icons img {
+  display: inline-block;
+  margin: 0 5px
+}
 
 
  @media(min-width: 968px){
@@ -607,7 +635,6 @@ textarea {
   }
 
   #social-icons {
-
     padding-bottom: 80px;
   }
  }
