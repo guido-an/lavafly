@@ -137,7 +137,9 @@ textarea {
      display: flex;
      padding: 20px;
      justify-content: space-between;
+     transition: transform .2s; /* Animation */
    }
+
     #hero-container header li a {
      color: #fff
    }
@@ -233,10 +235,10 @@ textarea {
     color: var(--blue);
   }
   #hero-text a {
-    background-color: var(--brown);
+    background-color: var(--yellow);
     padding: 10px 40px;
     text-decoration: none;
-    color:#fff;
+    color:#222;
     border-radius: 4px;
     position: relative;
     top: 40px;
@@ -362,8 +364,8 @@ textarea {
   background-color: var(--brown);
 }
 #tandem-flights-left {
-  background: url('../img/paragliding-tandem-flights.jpg');
-  height: 500px;
+  /* background: url('../img/paragliding-tandem-flights.jpg'); */
+  height: 600px;
  background-size: cover;
  background-position: center;
 }
@@ -394,7 +396,8 @@ textarea {
   margin-top: 20px
 }
 #tandem-flights-right {
-  padding: 20px 15px 60px
+  padding: 20px 15px 60px;
+  height: 550px;
 }
 #tandem-flights h4 {
    color: var(--blue)
@@ -444,6 +447,10 @@ textarea {
   }
   #tandem-flights-right p  {
     width: 90%;
+  }
+  #specials {
+    position: relative;
+    bottom: 40px;
   }
 }
 
@@ -560,6 +567,21 @@ textarea {
     }
   }
 
+
+   /* ==========================================================================
+   VIDEO HOME
+   ========================================================================== */
+#video-home {
+  width: 90%;
+  margin: 80px auto 120px;
+}
+@media(min-width: 968px){
+  #video-home {
+    width: 70%;
+    margin: 80px auto 120px;
+  }
+}
+
   /* ==========================================================================
    FOOTER
    ========================================================================== */
@@ -598,11 +620,8 @@ textarea {
    text-decoration: none;
  }
 
- #whatsapp {
-  position: relative;
-  top: 10px;
-}
-#whatsapp a:hover {
+
+.cta a:hover {
   color: #fafafa
 }
 
@@ -617,6 +636,13 @@ textarea {
  #social-icons img {
   display: inline-block;
   margin: 0 5px
+}
+
+.cta {
+  margin-top: 40px
+}
+.cta h4{
+  color: #fff;
 }
 
 
@@ -637,8 +663,21 @@ textarea {
   #social-icons {
     padding-bottom: 80px;
   }
+  #cta-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+    position: relative;
+    bottom: 20px;
+  }
  }
 
+
+ #whatsapp-footer {
+   position: fixed;
+   bottom: 20px;
+   right: 20px
+ }
 
 
 
