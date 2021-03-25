@@ -357,15 +357,48 @@ textarea {
     }
   }
 
+   /* ==========================================================================
+   PILOTS
+   ========================================================================== */
+  #pilots {
+    margin: 0 15px
+  }
+  #pilots img {
+    width: 90vw;
+    margin: 0 auto;
+    box-shadow: 0px 2px 20px 3px hsla(0,0%,72.2%,0.5)
+
+  }
+  #pilots p {
+    font-size: 22px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  @media(min-width: 968px){
+    #pilots-img-container {
+      display: flex;
+    }
+    #pilots img {
+      width: 22vw;
+      display: inline-block;
+      margin: 0 5px
+    }
+    #pilots {
+      margin: 0 4vw;
+      position: relative;
+      bottom: 80px;
+    }
+  }
+
+
   /* ==========================================================================
    TANDEM FLIGHTS
    ========================================================================== */
 #tandem-flights {
   background-color: var(--brown);
+  border-bottom: 2px solid #fff
 }
 #tandem-flights-left {
-  /* background: url('../img/paragliding-tandem-flights.jpg'); */
-  height: 600px;
  background-size: cover;
  background-position: center;
 }
@@ -380,38 +413,13 @@ textarea {
   color: #fff;
   font-size: 15px;
 }
-#flight-areas {
-  margin-top: 40px
-}
-#flight-areas ol,
-#flight-prices ul {
-  position: relative;
-  bottom: 10px
-}
-#flight-areas ol li{
-  color: #fff;
-  font-size: 15px;
-}
-#flight-prices {
-  margin-top: 20px
-}
+
 #tandem-flights-right {
   padding: 20px 15px 60px;
-  height: 550px;
 }
-#tandem-flights h4 {
-   color: var(--blue)
-}
-#tandem-flights ul li:last-child {
-   margin-top: 20px;
-}
-#discount-resident {
-  font-size: 14px;
-  margin-top: 40px;
-}
+
 @media(min-width:968px){
   #tandem-flights {
-    margin-top: 60px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -421,8 +429,11 @@ textarea {
     justify-content: space-around;
   }
   #tandem-flights-left {
-    width: 49vw;
-    height: 550px;
+    width: 50vw;
+
+  }
+  #tandem-flights-left iframe {
+    height: 500px;
   }
 
   #tandem-flights-right {
@@ -430,29 +441,71 @@ textarea {
     position: relative;
     top: 10px;
   }
-  #flight-prices {
-    position: relative;
-    bottom: 20px;
-  }
-  #flight-prices ul {
-    position: relative;
-    right: 20px;
-  }
-  #flight-areas {
-    position: relative;
-    bottom: 40px;
-  }
+
   #tandem-flights-right  {
-    padding: 20px 25px 60px
+    padding: 20px 25px 60px;
   }
   #tandem-flights-right p  {
     width: 90%;
   }
-  #specials {
-    position: relative;
-    bottom: 40px;
-  }
+
 }
+
+
+ /* ==========================================================================
+   SPECIALS
+   ========================================================================== */
+
+   #specials-section {
+     background-color: var(--brown);
+     position: relative;
+     bottom: 40px;
+     padding: 0 15px
+   }
+
+   #specials-section h4 {
+     color: var(--blue)
+  }
+   #specials-section ul li,
+   #specials-section p{
+     color: #fff
+  }
+  #flight-areas {
+    padding-top: 20px
+  }
+  #specials {
+    padding-bottom: 40px
+  }
+
+  #flight-areas ol li{
+    color: #fff;
+  }
+  #more-info {
+    background-color: var(--brown);
+    color: #fff;
+    text-align: center;
+    padding: 10px 0 40px;
+    position: relative;
+    bottom: 80px;
+  }
+  #more-info a {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  @media(min-width:968px){
+    #specials-section {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px 0 40px;
+      border-top: 1px solid #fff
+    }
+    #flight-areas {
+      padding-top: 0px
+    }
+
+
+  }
 
  /* ==========================================================================
    GIFT CARD
@@ -460,7 +513,8 @@ textarea {
   #gift-card {
     background-color: var(--brown);
     position: relative;
-    padding: 20px 15px 80px
+    padding: 20px 15px 80px;
+    border-bottom: 1px solid #fff;
   }
   #gift-card h3 {
     color: var(--blue)
@@ -485,20 +539,35 @@ textarea {
   #gift-card a:hover {
     padding: 12px 38px ;
   }
+  #gift-card-right img {
+   max-width: 100%;
+   margin-top: 40px
+  }
   @media(min-width: 968px){
     #gift-card {
       display: flex;
-      justify-content: space-between;
-      padding: 40px 15vw 80px
+      justify-content: space-evenly;
+      padding: 40px 15vw 80px;
+      height: 250px
     }
     #gift-card-left {
       width: 60%;
     }
+    #gift-card-right img {
+      position: relative;
+      bottom: 40px;
+      left: 60px;
+
+     }
   }
   /* ==========================================================================
    GALLERY
    ========================================================================== */
-.gallery-item {
+ #gallery {
+   position: relative;
+   bottom: 80px
+ }
+   .gallery-item {
   padding: 3px
 }
 .gallery-item img {
@@ -650,7 +719,7 @@ textarea {
   #contact {
     margin: 120px 4vw 40px;
     border-radius: 8px;
-    box-shadow:  0px 2px 20px 3px hsla(0,0%,72.2%,0.8);
+    box-shadow:  0px 2px 20px 3px rgba(255, 199, 199, 0.8);
 
   }
 
