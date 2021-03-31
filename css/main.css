@@ -363,6 +363,9 @@ textarea {
   #pilots {
     margin: 0 15px
   }
+  #pilots h2 {
+    color: var(--blue)
+  }
   #pilots img {
     width: 90vw;
     margin: 0 auto;
@@ -418,7 +421,7 @@ textarea {
   padding: 20px 15px 60px;
 }
 
-@media(min-width:968px){
+@media(min-width:1200px){
   #tandem-flights {
     width: 100%;
     display: flex;
@@ -492,16 +495,26 @@ textarea {
     color: #fff;
     text-decoration: none;
   }
+  #flight-prices li {
+    margin-bottom: 10px
+  }
+  #flight-prices li:last-child {
+    color: var(--yellow)
+  }
 
   @media(min-width:968px){
     #specials-section {
       display: flex;
-      justify-content: space-around;
+      justify-content: center;
       padding: 20px 0 40px;
       border-top: 1px solid #fff
     }
     #flight-areas {
       padding-top: 0px
+    }
+
+    #specials-section div {
+      width: 30%;
     }
 
 
