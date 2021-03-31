@@ -498,8 +498,8 @@ textarea {
   #flight-prices li {
     margin-bottom: 10px
   }
-  #flight-prices li:last-child {
-    color: var(--yellow)
+  #micro-sd {
+    color: var(--yellow) !important
   }
 
   @media(min-width:968px){
