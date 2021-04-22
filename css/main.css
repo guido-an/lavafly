@@ -372,14 +372,30 @@ textarea {
     box-shadow: 0px 2px 20px 3px hsla(0,0%,72.2%,0.5)
 
   }
-  #pilots p {
-    font-size: 22px;
-    margin-bottom: 50px;
+  #pilots h3 {
+    font-size: 20px;
     text-align: center;
+  }
+
+  #pilots p {
+    font-size: 15px;
+    color: #444 !important;
+    position: relative;
+    bottom: 10px
+  }
+  #pilots span {
+    font-size: 15px;
+    display: block;
+    margin-bottom: 40px;
+    color: #777
   }
   @media(min-width: 968px){
     #pilots-img-container {
       display: flex;
+      justify-content: space-between;
+    }
+    #pilots-img-container div {
+      width: 22vw
     }
     #pilots img {
       width: 22vw;
