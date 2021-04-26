@@ -389,6 +389,13 @@ textarea {
     margin-bottom: 40px;
     color: #777
   }
+
+  #pilots a {
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    margin-bottom: 40px
+  }
   @media(min-width: 968px){
     #pilots-img-container {
       display: flex;
@@ -406,6 +413,10 @@ textarea {
       margin: 0 4vw;
       position: relative;
       bottom: 80px;
+    }
+    #pilots a {
+      position: relative;
+      bottom: 20px
     }
   }
 
@@ -518,6 +529,22 @@ textarea {
     color: var(--yellow) !important
   }
 
+  .move-right-1 {
+    display: inline-block;
+    position: relative;
+    left: 11px
+  }
+  .move-right-2 {
+    display: inline-block;
+    position: relative;
+    left: 8px
+  }
+  .move-right-3 {
+    display: inline-block;
+    position: relative;
+    left: 6px
+  }
+
   @media(min-width:968px){
     #specials-section {
       display: flex;
@@ -592,7 +619,7 @@ textarea {
   /* ==========================================================================
    GALLERY
    ========================================================================== */
- #gallery {
+ .gallery {
    position: relative;
    bottom: 80px
  }
@@ -604,7 +631,7 @@ textarea {
   height: auto;
 }
 @media(min-width: 768px){
-  #gallery {
+  .gallery {
     display: flex;
   }
 }
