@@ -127,17 +127,16 @@ textarea {
    /* ==========================================================================
    HERO
    ========================================================================== */
-
    #hero-container {
      height: 100vh;
      width: 100vw;
-     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/paragliding-lanzarote.jpg');
+     background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../img/paragliding-lanzarote-2.jpg');
      background-position: center;
      background-size: cover;
      display: flex;
      padding: 20px;
      justify-content: space-between;
-     transition: transform .2s; /* Animation */
+     transition: transform .2s; /* Animationn */
    }
 
     #hero-container header li a {
@@ -213,7 +212,7 @@ textarea {
   #hero-text {
     z-index: 2;
     position: relative;
-    bottom: 80vh;
+    bottom: 70vh;
     text-align: center;
     color: #fff;
   }
