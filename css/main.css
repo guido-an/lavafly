@@ -212,9 +212,14 @@ textarea {
   #hero-text {
     z-index: 2;
     position: relative;
-    bottom: 70vh;
+    bottom: 80vh;
     text-align: center;
     color: #fff;
+  }
+
+  #next-adventure {
+    position: relative;
+    top: 290px
   }
   #hero-text h1 {
     font-size: 42px;
