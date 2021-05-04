@@ -202,7 +202,6 @@ textarea {
     font-weight: 500;
     font-size: 15px;
     color: #222;
-
     padding: 10px 20px;
     display: block;
     border-bottom: 2px solid #fafafa;
@@ -219,7 +218,7 @@ textarea {
 
   #next-adventure {
     position: relative;
-    top: 290px
+    top: 220px
   }
   #hero-text h1 {
     font-size: 42px;
@@ -232,7 +231,6 @@ textarea {
     font-size: 18px
   }
   #hero-text p {
-    /* font-size: 18px; */
     font-weight: 500;
   }
   #lavafly {
@@ -240,12 +238,12 @@ textarea {
   }
   #hero-text a {
     background-color: var(--yellow);
-    padding: 10px 40px;
+    padding: 15px 45px;
     text-decoration: none;
     color:#222;
     border-radius: 4px;
     position: relative;
-    top: 40px;
+    top: 240px;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -253,7 +251,7 @@ textarea {
   }
 
   #hero-text a:hover {
-    padding: 12px 45px;
+    padding: 18px 48px;
 
   }
   @media(min-width: 768px){
@@ -582,6 +580,20 @@ textarea {
   #gift-card p {
     color: #fff
   }
+  /* #gift-card a {
+    text-decoration: none;
+    background-color: var(--yellow);
+    color: #222;
+    padding: 10px 35px;
+    border-radius: 4px;
+    display: inline-block;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: padding 0.1s;
+  } */
   #gift-card a {
     text-decoration: none;
     background-color: var(--yellow);
@@ -590,6 +602,7 @@ textarea {
     border-radius: 4px;
     display: inline-block;
     margin-top: 40px;
+    margin-bottom: 40px;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -608,16 +621,26 @@ textarea {
       display: flex;
       justify-content: space-evenly;
       padding: 40px 15vw 80px;
-      height: 250px
+      height: 270px
     }
     #gift-card-left {
       width: 60%;
     }
-    #gift-card-right img {
+    #gift-card a {
+      position: relative;
+      top: 40px;
+    }
+    #gift-card-center img {
+      max-width: 100%;
+      position: relative;
+      top: 50px;
+
+    }
+    #gift-card-right {
       position: relative;
       bottom: 40px;
       left: 60px;
-
+      width: 100%
      }
   }
   /* ==========================================================================
