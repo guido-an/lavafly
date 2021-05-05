@@ -218,7 +218,7 @@ textarea {
 
   #next-adventure {
     position: relative;
-    top: 220px
+    top: 36vh
   }
   #hero-text h1 {
     font-size: 42px;
@@ -243,7 +243,7 @@ textarea {
     color:#222;
     border-radius: 4px;
     position: relative;
-    top: 240px;
+    top: 38vh;
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.5px;
@@ -641,6 +641,10 @@ textarea {
       bottom: 40px;
       left: 60px;
       width: 100%
+     }
+     #contact-gift {
+       position: relative;
+       left: 5vw;
      }
   }
   /* ==========================================================================
