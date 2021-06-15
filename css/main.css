@@ -254,7 +254,7 @@ textarea {
     padding: 18px 48px;
 
   }
-  @media(min-width: 768px){
+  @media(min-width: 968px){
 
     #nav-desktop {
       display: block;
