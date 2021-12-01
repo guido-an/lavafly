@@ -102,6 +102,9 @@ textarea {
     scroll-behavior: smooth;
     font-size: 16px;
    }
+   h2 {
+     text-transform: uppercase;
+   }
 
    ul li {
      list-style: none;
@@ -116,12 +119,14 @@ textarea {
     font-size: 15px;
     position: relative;
     top: 20px;
+    text-transform: uppercase;
   }
    .overtitle-section-secondary {
     color: var(--yellow);
     font-size: 15px;
     position: relative;
     top: 20px;
+    text-transform: uppercase;
   }
 
    /* ==========================================================================
@@ -254,6 +259,17 @@ textarea {
     padding: 18px 48px;
 
   }
+
+  #book-now {
+    text-transform: uppercase;
+  }
+
+  #france-flag {
+    position: relative;
+    left: 18px;
+    padding-bottom: 10px;
+  }
+  
   @media(min-width: 968px){
 
     #nav-desktop {
@@ -302,12 +318,19 @@ textarea {
       font-size: 18px;
       font-weight: 400;
     }
-
-
-
     #my-header {
       width: 100vw;
       display: flex;
+    }
+    .flag-language {
+      margin: 5px;
+    }
+    #second-flag {
+      position: relative;
+      bottom: 4px
+    }
+    #spain-flag-fr-version {
+      margin-left: 10px
     }
 
   }
