@@ -264,11 +264,7 @@ textarea {
     text-transform: uppercase;
   }
 
-  #france-flag {
-    position: relative;
-    left: 18px;
-    padding-bottom: 10px;
-  }
+ 
   
   @media(min-width: 968px){
 
@@ -325,13 +321,9 @@ textarea {
     .flag-language {
       margin: 5px;
     }
-    #second-flag {
-      position: relative;
-      bottom: 4px
-    }
-    #spain-flag-fr-version {
-      margin-left: 10px
-    }
+   .flag-desktop-container img {
+     margin: 0 5px
+   }
 
   }
 
