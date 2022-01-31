@@ -1,0 +1,60 @@
+#contract-hero h1 {
+    text-align: center;
+}
+#contract-form {
+    position: relative;
+    right: 2vw;
+    width: 90vw;
+    margin: 0 auto;
+  
+}
+#contract-form input{
+    width: 100%;
+    margin: 0 auto;
+    height: 30px;
+    border-radius: 4px;
+    border: 2px solid #f7f7f7;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding: 0 10px;
+}
+#contract-form input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+#contract-form input[type="checkbox"]:hover{
+   cursor: pointer;
+}
+#contract-form button {
+    width: 200px;
+    display: block;
+    background-color: green;
+    border: none;
+    border-radius: 35px;
+    color: #fff;
+    height: 40px;
+    font-size: 14px;
+    margin: 30px auto 80px;
+}
+#contract-form button:hover {
+    cursor: pointer;
+}
+@media(min-width: 968px){
+    #contract-form {
+        left: 5vw
+    }
+    #contract-form input{
+        width: 40%;
+        margin: 10px;
+        display: inline-block;
+        height: 35px;  
+    }
+    #checkbox-container {
+        position: relative;
+        left: 20px
+    }
+    #contract-form button {
+        position: relative;
+        right: 5vw;
+    }
+}

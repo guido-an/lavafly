@@ -18,6 +18,7 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/contract.css">
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
@@ -27,22 +28,29 @@
 
 <body>
 <!-- HERO -->
-<h1>Contract</h1>
+<div id="contract-hero">
+  <h1>Contract tandem flight paragliding</h1>
+</div>
 
-<!-- <form action="https://getform.io/f/8ec41516-80eb-48f0-ad46-66ae80601d2e" method="POST">
-    <input type="text" name="name">
-    <input type="email" name="email">
-    <input type="text" name="message">
- 
-
-    <button type="submit">Send</button>
-</form>
-   -->
-
-
-
-
-
+<!-- FORM -->
+<div id="contract-form">
+  <form onsubmit="return checkForm(this);" id="form" action="https://getform.io/f/72def33c-a1b8-494e-a2cd-9292c3ab787b" method="POST">
+    <input type="text" name="name" placeholder="Name*" required>
+    <input type="text" name="surname" placeholder="Surname*" required>
+    <input type="text" name="DNI" placeholder="Document Number*" required>
+    <input type="text" name="date-of-birth" placeholder="Date of birth*" required>
+    <input type="text" name="telephone" placeholder="Telephone*" required>
+    <input type="date" name="date" placeholder="Date*" required>
+    <input type="email" name="email" placeholder="Email*" required>
+    <input type="text" name="signature" placeholder="Signature*">
+    <!-- checkbox handle --> 
+    <div id="checkbox-container">
+      <p><strong>Acceptance of the contract *</strong></p>
+    <p><input type="checkbox" name="terms"> I accept the contract</p>
+    </div>
+    <button type="submit">Accept</button>
+  </form>
+</div>
 
 
 <!-- CONTACT -->
@@ -84,7 +92,21 @@
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  <!-- <script src="js/main.js"></script> -->
+  <script>
+    function checkForm(form){
+      if(!form.terms.checked) {
+        alert("Please indicate that you accept the contract");
+        form.terms.focus();
+        return false;
+      }
+      return true;
+    }
+
+  </script>
+
+
+  
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
