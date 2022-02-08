@@ -1,12 +1,11 @@
-#contract-hero h1 {
-    text-align: center;
+#contract-page-wrapper {
+    margin: 0 15px
 }
 #contract-form {
     position: relative;
     right: 2vw;
     width: 90vw;
-    margin: 0 auto;
-  
+    margin: 40px auto 0;
 }
 #contract-form input{
     width: 100%;
@@ -28,7 +27,7 @@
 #contract-form button {
     width: 200px;
     display: block;
-    background-color: green;
+    background-color: var(--brown);
     border: none;
     border-radius: 35px;
     color: #fff;
@@ -38,11 +37,23 @@
 }
 #contract-form button:hover {
     cursor: pointer;
+    background-color: green;
+}
+#contract-hero p {
+    font-size: 15px
+}
+#contract-signature p {
+    font-size: 14px;
+}
+#signature-input {
+    height: 120px  !important;
+    font-size: 22px !important;
+    text-align: center;
 }
 @media(min-width: 968px){
-    #contract-form {
-        left: 5vw
-    }
+   #contract-page-wrapper {
+    margin: 40px 15vw
+   }
     #contract-form input{
         width: 40%;
         margin: 10px;
@@ -53,8 +64,22 @@
         position: relative;
         left: 20px
     }
+    #signature-label {
+        position: relative;
+        top: 15px;
+        left: 10px
+    }
+    #signature-input {
+       width: 85% !important;
+       display: block;  
+    }
+    #contract-signature {
+        width: 90%;
+        padding: 0 10px
+    }
     #contract-form button {
         position: relative;
-        right: 5vw;
+        right: 8vw;
     }
+ 
 }
