@@ -78,15 +78,15 @@
 
 <!-- FORM -->
 <div id="contract-form">
-  <form onsubmit="return checkForm(this);" id="form" action="https://getform.io/f/72def33c-a1b8-494e-a2cd-9292c3ab787b" method="POST">
+  <form onsubmit="return checkForm(this);" id="form" action="https://getform.io/f/090cd22c-e1da-4887-bf7a-03b0d7670160" method="POST">
     <label>First name*</label>
     <input type="text" name="name"required>
     <label>Last name*</label>
-    <input type="text" name="last-name" required>
+    <input type="text" name="last name" required>
     <label>Identity number* (passport, ID card)</label>
-    <input type="text" name="identity-number" placeholder="Document Number*" required>
+    <input type="text" name="identity number" placeholder="Document Number*" required>
     <label>Date of birth*</label>
-    <input type="text" name="date-of-birth" required>
+    <input type="text" name="date of birth" required>
     <label>Phone*</label>
     <input type="text" name="phone" required>
     <label>Date*</label>
@@ -95,7 +95,7 @@
     <input type="email" name="email" required>
    <div>
     <label id="signature-label"><strong>Signature*</strong></label>
-    <input type="text" name="signature" id="signature-input">
+    <input type="text" name="signature" id="signature-input" required>
    </div>
     <div id="contract-signature">
       <p>The signing of this contract must be done before performing the activity by law. This also obliges us to collect your data and to inform you that we collect them. The information collected will be part of the database of "Vall d'Àger Activitats S.L.U.". According to the "Ley Orgánica 15/1999 de 13 de diciembre de Protección de Datos de Carácter Personal" and the "Ley de Servicios de la Sociedad de la Información y del Comercio Electrónico 34/02 del 11 de julio" you have the right to access and rectification of your data. If you wish to exercise this right and obtain the information that belongs to you, please contact the Customer Service LavaFly Lanzarote / C.C. El Pueblo. Las Coloradas, Local 37, 35580 Playa Blanca, Las Palmas. Your data may be used for the commercial service of Vall d'Àger Activitats, and you may receive commercial offers from our company for services and products similar to those you have requested. Since the right to one's own image is recognized in Article 18.1 of the Constitution and regulated by Law 5/1982 of May 5, 1982, on the right to honor, personal and family privacy and self-image, I authorize Vall d'Àger Activitats to capture, reproduce and / or publish images where I can clearly identify myself. For our part it is possible that we never tell you anything else, or that once a year we contact you to inform you of any news or promotion concerning LavaFly Lanzarote. We are not in the business of sending SPAM every 2 x 3. However, if you want, you can avoid that we never tell you anything again and/or that we do not reproduce or publish a photo or video where you appear for any purpose.</p>
@@ -155,11 +155,11 @@
   <!-- <script src="js/main.js"></script> -->
   <script>
     function checkForm(form){
-      if(!form.terms.checked) {
+      if(!form.accept.checked) {
         alert("Please indicate that you accept the contract");
-        form.terms.focus();
+        form.accept.focus();
         return false;
-      }
+      } 
       return true;
     }
 
