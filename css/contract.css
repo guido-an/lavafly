@@ -7,6 +7,14 @@
     width: 90vw;
     margin: 40px auto 0;
 }
+#contract-form label {
+    margin-top: 15px;
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    position: relative;
+    bottom: 5px;
+}
 #contract-form input{
     width: 100%;
     margin: 0 auto;
@@ -54,28 +62,31 @@
    #contract-page-wrapper {
     margin: 40px 15vw
    }
+ 
     #contract-form input{
-        width: 40%;
-        margin: 10px;
+        width: 50%;
+        margin: 0 auto;
         display: inline-block;
         height: 35px;  
+        position: relative;
+        left: 15vw
     }
     #checkbox-container {
         position: relative;
-        left: 20px
+        left:15vw
     }
-    #signature-label {
+    #contract-form label {
         position: relative;
-        top: 15px;
-        left: 10px
+        left: 15vw
     }
     #signature-input {
-       width: 85% !important;
+       width: 50% !important;
        display: block;  
     }
     #contract-signature {
-        width: 90%;
-        padding: 0 10px
+       width: 52%;
+       position: relative;
+       left: 15vw
     }
     #contract-form button {
         position: relative;

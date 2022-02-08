@@ -79,15 +79,22 @@
 <!-- FORM -->
 <div id="contract-form">
   <form onsubmit="return checkForm(this);" id="form" action="https://getform.io/f/72def33c-a1b8-494e-a2cd-9292c3ab787b" method="POST">
-    <input type="text" name="name" placeholder="Name*" required>
-    <input type="text" name="surname" placeholder="Surname*" required>
-    <input type="text" name="DNI" placeholder="Document Number*" required>
-    <input type="text" name="date-of-birth" placeholder="Date of birth*" required>
-    <input type="text" name="telephone" placeholder="Telephone*" required>
+    <label>First name*</label>
+    <input type="text" name="name"required>
+    <label>Last name*</label>
+    <input type="text" name="last-name" required>
+    <label>Identity number* (passport, ID card)</label>
+    <input type="text" name="identity-number" placeholder="Document Number*" required>
+    <label>Date of birth*</label>
+    <input type="text" name="date-of-birth" required>
+    <label>Phone*</label>
+    <input type="text" name="phone" required>
+    <label>Date*</label>
     <input type="date" name="date" placeholder="Date*" required>
-    <input type="email" name="email" placeholder="Email*" required>
+    <label>Email*</label>
+    <input type="email" name="email" required>
    <div>
-    <p id="signature-label"><strong>Signature</strong></p>
+    <label id="signature-label"><strong>Signature*</strong></label>
     <input type="text" name="signature" id="signature-input">
    </div>
     <div id="contract-signature">
@@ -96,7 +103,7 @@
     <!-- checkbox handle --> 
     <div id="checkbox-container">
       <p><strong>Acceptance of the contract *</strong></p>
-    <p><input type="checkbox" name="terms"> I accept the contract</p>
+    <p><input type="checkbox" name="accept"> I accept the contract</p>
     </div>
     <button type="submit">Accept</button>
   </form>
