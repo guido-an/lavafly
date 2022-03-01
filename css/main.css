@@ -294,7 +294,8 @@ textarea {
        top: 10px;
     }
      #nav-desktop ul li {
-      margin-right: 60px
+      margin-right: 20px;
+      font-size: 12px !important;
     }
     #nav-desktop ul li a:hover {
       border-bottom: 2px solid var(--blue);
