@@ -517,14 +517,10 @@ textarea {
    #specials-section h4 {
      color: var(--blue)
   }
-  #specials-section h5 {
-    color: var(--blue);
-    margin: 0;
-    font-size: 15px;
- }
    #specials-section ul li,
    #specials-section p{
-     color: #fff
+     color: #fff;
+     margin-bottom: 0;
   }
   #flight-areas {
     padding-top: 20px
@@ -553,9 +549,6 @@ textarea {
   }
   #flight-prices li {
     margin-bottom: 10px
-  }
-  #flight-prices h4 {
-    margin-bottom: 0;
   }
   #flight-center-ul {
     padding-top: 15px;
