@@ -559,7 +559,12 @@ textarea {
     justify-content: space-between;
   }
   #micro-sd {
-    color: var(--yellow) !important
+    color: var(--yellow) !important;
+    width:350px
+  }
+
+  .top-bottom-space{
+    margin: 20px 0 !important;
   }
   #special-column {
     width: 100% !important;
@@ -595,6 +600,20 @@ textarea {
 .price-list {
   width: 40%;
 }
+/* .top-height {
+  margin-top: 10px;
+  margin-bottom: 10px;
+} */
+
+.marginLeft{
+  margin-left: 6px;
+}
+
+.marginLeft10{
+  margin-left: 7px;
+
+}
+
 .price-list li {
   display: flex;
   align-items: center;
