@@ -510,16 +510,27 @@ textarea {
      bottom: 40px;
      padding: 0 15px
    }
-
+   #specials-section ul{
+    padding-left: 0;
+    margin: 0;
+  }
    #specials-section h4 {
      color: var(--blue)
   }
+  #specials-section h5 {
+    color: var(--blue);
+    margin: 0;
+    font-size: 15px;
+ }
    #specials-section ul li,
    #specials-section p{
      color: #fff
   }
   #flight-areas {
     padding-top: 20px
+  }
+  #flight-areas ol {
+    padding-left: 16px;
   }
   #specials {
     padding-bottom: 40px
@@ -543,10 +554,36 @@ textarea {
   #flight-prices li {
     margin-bottom: 10px
   }
+  #flight-prices h4 {
+    margin-bottom: 0;
+  }
+  #flight-center-ul {
+    padding-top: 15px;
+  }
+  #flight-center-ul li:first-child {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
   #micro-sd {
     color: var(--yellow) !important
   }
-
+  #special-column {
+    width: 100% !important;
+  }
+  #special-column li:first-child {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #special-group-ul, #special-column ul ,  #special-column ul li, #flight-center-ul li{
+    margin: 0;
+  }
+  #special-column .special-gift {
+    color: var(--blue);
+    display: block;
+  }
   .move-right-1 {
     display: inline-block;
     position: relative;
@@ -562,7 +599,19 @@ textarea {
     position: relative;
     left: 6px
   }
-
+.price-list {
+  width: 50%;
+}
+.price-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media only screen and (min-width:968px) and (max-width:1320px) {
+  .price-list, #flight-center-ul li:first-child, #special-column li:first-child {
+    width: 80%;
+  }
+}
   @media(min-width:968px){
     #specials-section {
       display: flex;
@@ -577,10 +626,23 @@ textarea {
     #specials-section div {
       width: 30%;
     }
-
-
+   
   }
-
+  @media only screen and (max-width: 968px) {
+    .price-list, #flight-center-ul li:first-child, #special-column li:first-child {
+      width: 40%;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 600px) {
+    .price-list, #flight-center-ul li:first-child, #special-column li:first-child {
+      width: 60%;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .price-list, #flight-center-ul li:first-child, #special-column li:first-child {
+      width: 80%;
+    }
+  }
  /* ==========================================================================
    GIFT CARD
    ========================================================================== */
@@ -632,6 +694,7 @@ textarea {
    max-width: 100%;
    margin-top: 40px
   }
+
   @media(min-width: 968px){
     #gift-card {
       display: flex;
