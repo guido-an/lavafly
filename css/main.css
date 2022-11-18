@@ -561,7 +561,7 @@ textarea {
     padding-top: 15px;
   }
   #flight-center-ul li:first-child {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
   }
@@ -572,7 +572,7 @@ textarea {
     width: 100% !important;
   }
   #special-column li:first-child {
-    width: 50%;
+    width: 40%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -600,7 +600,7 @@ textarea {
     left: 6px
   }
 .price-list {
-  width: 50%;
+  width: 40%;
 }
 .price-list li {
   display: flex;
