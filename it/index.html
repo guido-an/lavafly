@@ -23,6 +23,24 @@
  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <meta name="theme-color" content="#fafafa">
+  <!-----------------google review-------->  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://tutorialswebsite.com/cdn/google_places.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDaCBVrB5__JkffBznDWFD55M_pLyvXeIc&signed_in=true&libraries=places"></script>
+  <script>
+    jQuery(document).ready(function( $ ) {
+    $("#google-reviews").googlePlaces({
+    placeId: 'ChIJW5bXVQEhRgwR9g0rEil4IDY' //Find placeID @: https://developers.google.com/places/place-id
+    , render: ['reviews']
+    , min_rating:4
+    , max_rows:6
+    ,rotateTime: false
+    , shorten_names: true
+    
+    
+    });
+    });
+    </script>
 </head>
 
 <body>
@@ -306,6 +324,14 @@
   <iframe src="https://www.youtube.com/embed/joTKRvpSimY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <iframe src="https://www.youtube.com/embed/k6NbAmeaGls" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </div>
+ <!-- GOGGLE REVIEW -->
+ <section id="google-reviews-wrapper">
+  <div class="google-imgBox">
+    <img src="../img/google-review.png" alt="google-review" />
+  </div>
+  <div id="google-reviews"></div>
+  <a  href="https://www.google.com/search?q=LAVAFLY+LANZAROTE&ei=9HwAZPmjKL6q4-EPtoeCoAw&ved=0ahUKEwj57bCVh739AhU-1TgGHbaDAMQQ4dUDCA8&uact=5&oq=LAVAFLY+LANZAROTE&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzINCC4QgAQQxwEQrwEQCkoECEEYAFAAWABgvAZoAHABeACAAbYBiAG2AZIBAzAuMZgBAKABAqABAcABAQ&sclient=gws-wiz-serp#lrd=0xc46210155d7965b:0x36207829122b0df6,1,,,," target="_blank">See All Our Google Reviews</a>
+</section>
 <!-- CONTACT -->
 <footer id="contact">
   <img id="logo-footer" src="../img/logo-lavafly.png" alt="logo-lavafly">
