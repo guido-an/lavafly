@@ -1380,7 +1380,13 @@ span.review-profile-image img {
 .star:after {
   content: "\2605";
 }
-
+.darlo-card a {
+  bottom: unset !important; 
+  text-decoration: underline !important;
+  color: #444444b5 !important;
+  margin-bottom: 0 !important;
+  display: inline !important;
+}
 @media only screen and (max-width: 1240px) {
   .review-item {
     width: 47%;
