@@ -1315,7 +1315,7 @@ span.review-profile-image img {
   text-overflow: ellipsis;
   display: -webkit-box;
   -webkit-line-clamp: 6;
-  -webkit-box-orient: vertical;  
+  -webkit-box-orient: vertical;
   overflow: hidden;
 }
 
@@ -1381,11 +1381,15 @@ span.review-profile-image img {
   content: "\2605";
 }
 .darlo-card a {
-  bottom: unset !important; 
+  bottom: unset !important;
   text-decoration: underline !important;
   color: #444444b5 !important;
   margin-bottom: 0 !important;
   display: inline !important;
+}
+.darlo-card .darlo-card-description {
+  margin-bottom: 0 !important;
+  margin-top: 0 !important;
 }
 @media only screen and (max-width: 1240px) {
   .review-item {
