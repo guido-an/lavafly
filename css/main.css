@@ -485,11 +485,13 @@ ul li a {
    ========================================================================== */
 #tandem-flights {
   background-color: var(--brown);
-  border-bottom: 2px solid #fff
+  border-bottom: 2px solid #fff;
 }
 
 #tandem-flights-left {
   background-size: cover;
+  position: relative;
+  top: 20px;
   background-position: center;
 }
 
@@ -515,6 +517,7 @@ ul li a {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    height: 490px;
   }
 
   #flights-second-container {
@@ -523,26 +526,29 @@ ul li a {
   }
 
   #tandem-flights-left {
-    width: 50vw;
-
+    width: 32vw;
+    position: relative;
+    top: 42px;
   }
 
   #tandem-flights-left iframe {
-    height: 500px;
+    height: 360px;
   }
 
   #tandem-flights-right {
-    width: 45vw;
-    position: relative;
-    top: 10px;
+    width: 64vw;
+
   }
 
   #tandem-flights-right {
-    padding: 20px 25px 60px;
+    padding: 18px 18px 60px;
   }
 
   #tandem-flights-right p {
-    width: 90%;
+    width: 100%;
+  }
+  #tandem-flights-right h2 {
+    margin-bottom: 0 !important;
   }
 
 }
@@ -935,8 +941,8 @@ details[open] summary~* {
    VIDEO HOME
    ========================================================================== */
 #video-home {
-  width: 90%;
-  margin: 80px auto 120px;
+  width: 100%;
+  margin: 60px 0px;
 }
 
 #video-home iframe {
@@ -948,15 +954,16 @@ details[open] summary~* {
 @media(min-width: 968px) {
   #video-home {
 
-    margin: 80px auto 120px;
+    margin: 60px 0px 60px 23px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 15px;
   }
 
   #video-home iframe {
     margin-bottom: 20px;
-    width: 49%;
-    height: 500px
+    width: 33%;
+    height: 360px
   }
 }
 
