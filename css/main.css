@@ -929,7 +929,7 @@ details[open] summary~* {
   bottom: 20px;
 }
 
-@media(min-width: 767px) {
+@media(min-width: 968px) {
   #faq {
     margin: 60px 20vw 60px;
 
@@ -942,7 +942,7 @@ details[open] summary~* {
    ========================================================================== */
 #video-home {
   width: 100%;
-  margin: 60px 0px;
+  margin: 60px auto 120px;
 }
 
 #video-home iframe {
@@ -1459,6 +1459,9 @@ span.review-profile-image img {
   #google-reviews-wrapper {
     width: 80%;
   }
+  .accordian {
+    width: unset;
+  }
 }
 
 @media only screen and (max-width: 881px) {
@@ -1481,10 +1484,8 @@ span.review-profile-image img {
   #google-reviews {
     margin-top: 25px;
   }
-  .accordian {
-    width: unset;
-  }
-  .panel p{
+
+  .panel p {
     width: unset;
     left: 0px !important;
   }
