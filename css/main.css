@@ -812,12 +812,13 @@ ul li a {
   #gift-card {
     display: flex;
     justify-content: space-evenly;
-    padding: 40px 15vw 80px;
-    height: 270px
+    padding: 40px 15vw 10px;
+    height: auto;
   }
 
   #gift-card-left {
     width: 60%;
+    padding-right: 5px;
   }
 
   #gift-card a {
