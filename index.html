@@ -43,20 +43,46 @@
   <script
     src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDaCBVrB5__JkffBznDWFD55M_pLyvXeIc&language=en&signed_in=true&libraries=places"></script>
 
+  <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Optional Theme -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script>
     jQuery(document).ready(function ($) {
-      $("#google-reviews").googlePlaces({
-        placeId: 'ChIJW5bXVQEhRgwR9g0rEil4IDY' //Find placeID @: https://developers.google.com/places/place-id
-        , render: ['reviews']
-        , min_rating: 4
-        , max_rows: 6
-        , rotateTime: false
-        , shorten_names: true
+      // jQuery("#google-reviews").googlePlaces({
+      //   placeId: 'ChIJW5bXVQEhRgwR9g0rEil4IDY' //Find placeID @: https://developers.google.com/places/place-id
+      //   , render: ['reviews']
+      //   , min_rating: 4
+      //   , max_rows: 6
+      //   , rotateTime: false
+      //   , shorten_names: true
 
 
+      // });
+      jQuery('.partner-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
       });
     });
   </script>
+  
 </head>
 
 <body>
@@ -322,9 +348,163 @@
   </section>
 
   <!-- Partners -->
-  <section class="our-partners">
+  <section class="partner-banner">
+    <div class="partner-banner-details">
+      <h5>Our Partners</h5>
+      <!-- <p class="partner-subtitle">Passion and Respect for Lanzarote</p> -->
+      <p>At LavaFly, we choose our partners with great care.
+        Every company featured here is handpicked not just
+        for the quality of their services, but because they share
+        our values. They know, appreciate, and actively protect
+        the unique nature of this island.</p>
+      <p>We only work with businesses we trust 100%,
+        so you can feel confident in every one of our
+        recommendations.</p>
+    </div>
+  </section>
+  <!-- partner container -->
+  <div class="partner-container">
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/LIGHT_LARGE_FEATURED_KAYAK.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <p class="desc">
+            LavaFly Lanzarote is now also represented in the official KAYAK travel guide for Teguise / Lanzarote.
+            LavaFly Lanzarote is now also represented in the official KAYAK travel guide for Teguise / Lanzarote
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-1.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <!-- <h5 class="title">Boat and cycle tours</h5> -->
+          <p class="desc">
+            ING Boats is your go-to on La Graciosa for boat and bike tours
+            no license needed, just pure island adventure. Cruise to hidden
+            coves by boat or explore the rugged landscape by bike a fun,
+            authentic way to experience the island.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-2.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <p class="desc">
+            We present KALAKAI as an authentic retreat for mindful travelers
+            nestled in nature, far from the crowds. This camp embodies
+            sustainable living with style: surfng, yoga, hiking, and island
+            workshops combine to create a laid-back.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://kalakaicamp.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-3.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <p class="desc">
+            Discover more about Lanzarote’s unique culture, nature and
+            experiences at VisitLanzarote your lanzarote tourism portal.
+            Plan your stay, explore activities, and find hidden gems all in
+            one place.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-4.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <!-- <h5 class="title">SmyleSurf – Your Surf School in Famara, Lanzarote</h5> -->
+          <p class="desc">
+            What sets us apart is our personal approach and positive philosophy.
+            They offer small group sessions or private lessons to help you progress
+            faster and surf with confidence. With one-on-one coaching, you'll get
+            better.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-6.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <p class="desc">
+            BodyKinetik offers professional massage, sport recovery, and wellness
+            treatments on Lanzarote — perfect for active travelers and those
+            seeking deep relaxation. Whether you need to recharge after a hike or
+            unwind from stress.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-5.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <p class="desc">
+            Water experiences that hold you so you can let go.
+            Feel how the water cradles, massages, and gently invites you to relax and
+            surrender. Many who join these sessions are facing stress, anxiety, fatigue,
+            sleep issues, or emotional overwhelm. 
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Discover more</a>
+      </div>
+    </div>
+
+  </div>
+  <!-- <section class="our-partners">
     <h2>Our Partners</h2>
     <div class="divider"></div>
+    <div class="partner-main">
+
+    </div>
     <div class="partner-main">
       <div class="partner-item">
       <div class="partner-image">
@@ -371,7 +551,7 @@
       </div>
     </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- FAQ -->

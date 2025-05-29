@@ -1406,13 +1406,112 @@ span.review-profile-image img {
   justify-content: center;
   flex-wrap: wrap;
 }
-.partner-item {
+.partner-banner {
+  background-image: url("../img/partner-banner.jpg");
+  background-size: cover;
+  background-position: 100% 61%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 40px 100px;
+  box-sizing: border-box;
+}
+.partner-banner-details {
+  max-width: 450px;
+}
+.partner-logo-container {
+  margin-bottom: 30px;
+}
+.partner-banner-details h5 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0 !important;
+}
+.partner-container {
+  padding: 40px 100px;
+  width: 100%;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 32px !important;
+  line-height: 1;
+  opacity: .75 !important;
+  color: #010101 !important;
+}
+.partner-banner-details .partner-subtitle {
+  margin: 0 !important;
+}
+.partner-banner-details p,
+.partner-subtitle {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.partner-logo-container {
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  padding: 10px 20px;
+}
+.partner-logo-content {
+  /* width: 60%; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding:0 20px;
+}
+.partner-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.partner-logo {
+  width: 200px;
+  max-width: 200px;
+  margin-right: 30px;
+  min-width: 200px;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+}
+.partner-logo img {
+  max-width: 100%;
+  height: auto !important;
+  object-fit: contain;
+}
+.partner-logo-content .title {
+  color: #141414;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 8px;
+  font-weight: 400;
+}
+.partner-logo-content .desc {
+  color: #141414;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+/* .partner-item {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 48%;
   gap: 20px;
-}
+} */
 .our-partners h2 {
   text-align: center;
   font-size: 32px;
@@ -1426,7 +1525,8 @@ span.review-profile-image img {
 .partner-image img {
   max-width: 350px;
 }
-.partner-text a {
+.partner-text a,
+.partner-link {
   background: #edb905;
   padding: 10px 18px;
   color: #fff;
@@ -1452,13 +1552,22 @@ span.review-profile-image img {
   .review-stars ul li i {
     font-size: 24px;
   }
-  .partner-item {
-    width: 100%;
+  .partner-container {
+    max-width: 100%;
   }
+  /* .partner-item {
+    width: 100%;
+  } */
 }
 @media only screen and (max-width: 968px) {
   #google-reviews-wrapper {
     padding-bottom: 50px;
+  }
+  .partner-container {
+    padding: 20px;
+  }
+  .partner-banner {
+    padding: 30px;
   }
   #google-reviews-wrapper {
     width: 80%;
@@ -1475,6 +1584,9 @@ span.review-profile-image img {
   }
   .google-imgBox {
     width: 180px;
+  }
+  .partner-logo-content {
+    width: 70%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -1493,10 +1605,52 @@ span.review-profile-image img {
     width: unset;
     left: 0px !important;
   }
-  .partner-item {
+  /* .partner-item {
     flex-wrap: wrap;
-  }
+  } */
   .partner-image img {
     max-width: 100%;
+  }
+  .partner-banner {
+    height: 400px;
+  }
+  .partner-banner-details,
+  .partner-logo-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .partner-logo-container,
+  .partner-logo-content {
+    flex-direction: column;
+  }
+  .partner-text a, .partner-link {
+    margin-top: 20px;
+  }
+  .partner-logo-container{
+    padding: 10px 30px !important;
+    /* margin-bottom: 40px; */
+    margin-bottom: 0 !important;
+  }
+  .partner-logo-content {
+  padding: 0 !important;
+  }
+  .slick-next{right: 19px !important;}
+  .slick-prev {left: 5px !important;}
+  .partner-logo {
+    width: 300px;
+    max-width: 300px;
+    margin-right: 0px;
+    min-width: 300px;
+  }
+  .partner-logo-content .desc , .partner-logo-content .title {
+    text-align: center;
+    font-size: 14px;
+  }
+  .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 26px !important;
+  }
+  .partner-logo {
+    height: 130px;
   }
 }
