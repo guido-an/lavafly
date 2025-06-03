@@ -27,20 +27,45 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://tutorialswebsite.com/cdn/google_places.js"></script>
    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyDaCBVrB5__JkffBznDWFD55M_pLyvXeIc&language=es&signed_in=true&libraries=places"></script>
-   <script>
-    jQuery(document).ready(function( $ ) {
-    $("#google-reviews").googlePlaces({
-    placeId: 'ChIJW5bXVQEhRgwR9g0rEil4IDY' //Find placeID @: https://developers.google.com/places/place-id
-    , render: ['reviews']
-    , min_rating:4
-    , max_rows:6
-    ,rotateTime: false
-    , shorten_names: true
+    <!-- Slick CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <!-- Optional Theme -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Slick JS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script>
+    jQuery(document).ready(function ($) {
+      // jQuery("#google-reviews").googlePlaces({
+      //   placeId: 'ChIJW5bXVQEhRgwR9g0rEil4IDY' //Find placeID @: https://developers.google.com/places/place-id
+      //   , render: ['reviews']
+      //   , min_rating: 4
+      //   , max_rows: 6
+      //   , rotateTime: false
+      //   , shorten_names: true
 
 
+      // });
+      jQuery('.partner-container').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        arrows: true,
+        responsive: [
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 1
+            }
+          }
+        ]
+      });
     });
-    });
-    </script>
+  </script>
 </head>
 
 <body>
@@ -311,6 +336,141 @@ salida y volaremos como pájaros.
 </section>
 
 
+  <!-- Partners -->
+  <section class="partner-banner">
+    <div class="partner-banner-details">
+      <h5>Nuestros socios: compromiso con Lanzarote</h5>
+      <!-- <p class="partner-subtitle">Passion and Respect for Lanzarote</p> -->
+      <p>En LavaFly seleccionamos a nuestros socios con el máximo cuidado. Cada empresa que presentamos aquí ha sido elegida a mano, no solo por la calidad de sus servicios, sino porque comparte nuestros valores. Conocen, respetan y protegen las particularidades de esta isla única.</p>
+      <p>Colaboramos únicamente con empresas en las que confiamos al 100 %, para que tú también puedas confiar plenamente en cada una de nuestras recomendaciones.</p>
+    </div>
+  </section>
+  <!-- partner container -->
+  <div class="partner-container">
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/LIGHT_LARGE_FEATURED_KAYAK.png" alt="kayak">
+        </div>
+        <div class="">
+          <p class="desc">
+            LavaFly Lanzarote ahora también está representada en la guía de viajes oficial de KAYAK para Teguise / Lanzarote.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://www.kayak.com.au/Matakana.302686.guide" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-1.png" alt="ING Boats Logo">
+        </div>
+        <div class="">
+          <!-- <h5 class="title">Boat and cycle tours</h5> -->
+          <p class="desc">
+            *Excursiones en barco y bicicleta*
+            ING Boats es tu opción ideal en La Graciosa para excursiones en barco y bicicleta. No se necesita licencia, solo pura aventura isleña. Navega hasta calas escondidas en barco o explora el paisaje escarpado en bicicleta: una forma divertida y auténtica de vivir la isla.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://ingboats.com/" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-2.png" alt="KALAKAI">
+        </div>
+        <div class="">
+          <p class="desc">
+            Presentamos *KALAKAI* como un retiro auténtico para viajeros conscientes, enclavado en la naturaleza y lejos de las multitudes. Este campamento encarna una vida sostenible con estilo: surf, yoga, senderismo y talleres isleños se combinan para crear una experiencia relajada con la esencia genuina de Lanzarote. Un socio que comparte nuestros valores al 100 %.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://kalakaicamp.com/" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-3.png" alt="Discover">
+        </div>
+        <div class="">
+          <p class="desc">
+            Descubre más sobre la cultura, la naturaleza y las experiencias únicas de Lanzarote en *VisitLanzarote*, el portal oficial de turismo de la isla.
+Planifica tu estancia, explora actividades y encuentra rincones secretos, todo en un solo lugar.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://visitlanzarote.es" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-4.png" alt="SmyleSurf">
+        </div>
+        <div class="">
+          <!-- <h5 class="title">SmyleSurf – Your Surf School in Famara, Lanzarote</h5> -->
+          <p class="desc">
+            *SmyleSurf – Tu escuela de surf en Famara, Lanzarote*
+SmyleSurf es una escuela de surf joven y apasionada con sede en Famara, Lanzarote. Lo que nos diferencia es nuestro enfoque personal y nuestra filosofía positiva. Ofrecemos sesiones en grupos reducidos o clases privadas para ayudarte a avanzar más rápido y surfear con confianza. Con clases personalizadas, obtendrás mejores resultados y disfrutarás más en el agua desde el primer día.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://smylesurfcom" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-6.png" alt="BodyKinetik">
+        </div>
+        <div class="">
+          <p class="desc">
+            *BodyKinetik* ofrece masajes profesionales, recuperación deportiva y tratamientos de bienestar en Lanzarote — perfecto para viajeros activos y quienes buscan una relajación profunda.
+Ya sea para recargar energías después de una caminata o liberar el estrés, nuestras terapias personalizadas te ayudarán a sentirte mejor.
+Reserva tu sesión y experimenta el poder sanador del tacto en un entorno tranquilo de la isla.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://www.bodykinetik.com" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+    <div class="partner-logo-container">
+      <div class="partner-logo-content">
+        <div class="partner-logo">
+          <img src="/img/partner-logo-5.png" alt="Experiences">
+        </div>
+        <div class="">
+          <p class="desc">
+            Experiencias acuáticas que te sostienen para que puedas soltar.
+Siente cómo el agua te acuna, te masajea y te invita suavemente a relajarte y rendirte.
+Muchas personas que participan en estas sesiones enfrentan estrés, ansiedad, fatiga, problemas de sueño o sobrecarga emocional.
+Otras vienen en busca de claridad, sanación o simplemente una conexión más profunda consigo mismas.
+          </p>
+        </div>
+      </div>
+      <div class="partner-link-wrap">
+        <a class="partner-link" href="https://experimentart.es" target="_blank">Descubre más</a>
+      </div>
+    </div>
+
+  </div>
 
 <!-- FAQ -->
 <section id="faq">
