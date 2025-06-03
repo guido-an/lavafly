@@ -87,15 +87,15 @@ textarea {
    Author's custom styles
    ========================================================================== */
 :root {
-  --blue: #62FCF7;
-  --brown: #7E3838;
-  --red: #FA4605;
-  --yellow: #EDB905
+  --blue: #62fcf7;
+  --brown: #7e3838;
+  --red: #fa4605;
+  --yellow: #edb905;
 }
 
 html,
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -138,22 +138,23 @@ ul li a {
 #hero-container {
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('../img/paragliding-lanzarote-2.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../img/paragliding-lanzarote-2.jpg");
   background-position: center;
   background-size: cover;
   display: flex;
   padding: 20px;
   justify-content: space-between;
-  transition: transform .2s;
+  transition: transform 0.2s;
   /* Animationn */
 }
 
 #hero-container header li a {
-  color: #fff
+  color: #fff;
 }
 
 #nav-mobile {
-  display: none
+  display: none;
 }
 
 #logo-container {
@@ -162,20 +163,20 @@ ul li a {
 }
 
 #logo-container img {
-  height: 100px
+  height: 100px;
 }
 
 #burger-icon {
   position: relative;
   right: 40px;
-  top: 10px
+  top: 10px;
 }
 
 #burger-icon div {
   height: 2px;
   background-color: #fff;
   width: 35px;
-  margin-bottom: 5px
+  margin-bottom: 5px;
 }
 
 #closing-menu-icon {
@@ -194,11 +195,11 @@ ul li a {
   z-index: 99;
   position: relative;
   right: 35px;
-  bottom: 20px
+  bottom: 20px;
 }
 
 #nav-desktop {
-  display: none
+  display: none;
 }
 
 #nav-mobile ul li {
@@ -220,7 +221,7 @@ ul li a {
   padding: 10px 20px;
   display: block;
   border-bottom: 2px solid #fafafa;
-  width: 80vw
+  width: 80vw;
 }
 
 #hero-text {
@@ -233,7 +234,7 @@ ul li a {
 
 #next-adventure {
   position: relative;
-  top: 36vh
+  top: 36vh;
 }
 
 #hero-text h1 {
@@ -244,7 +245,7 @@ ul li a {
 #overtitle-hero {
   position: relative;
   top: 30px;
-  font-size: 18px
+  font-size: 18px;
 }
 
 #hero-text p {
@@ -271,17 +272,13 @@ ul li a {
 
 #hero-text a:hover {
   padding: 18px 48px;
-
 }
 
 #book-now {
   text-transform: uppercase;
 }
 
-
-
-@media(min-width: 968px) {
-
+@media (min-width: 968px) {
   #nav-desktop {
     display: block;
   }
@@ -291,19 +288,19 @@ ul li a {
   }
 
   #hero-container {
-    padding: 20px 4vw
+    padding: 20px 4vw;
   }
 
   #burger-icon div {
-    display: none
+    display: none;
   }
 
   #nav-mobile {
-    display: flex
+    display: flex;
   }
 
   #logo-container img {
-    height: 120px
+    height: 120px;
   }
 
   #nav-desktop ul {
@@ -320,7 +317,7 @@ ul li a {
 
   #nav-desktop ul li a:hover {
     border-bottom: 2px solid var(--blue);
-    padding-bottom: 5px
+    padding-bottom: 5px;
   }
 
   #nav-desktop ul li a {
@@ -351,9 +348,8 @@ ul li a {
   }
 
   .flag-desktop-container img {
-    margin: 0 5px
+    margin: 0 5px;
   }
-
 }
 
 /* ==========================================================================
@@ -362,7 +358,7 @@ ul li a {
 #about {
   position: relative;
   bottom: 100px;
-  margin: 0 15px
+  margin: 0 15px;
 }
 
 #about-left img {
@@ -370,16 +366,15 @@ ul li a {
   height: auto;
   display: block;
   margin: 0 auto;
-  box-shadow: 0px 2px 20px 3px hsla(0, 0%, 72.2%, 0.5)
+  box-shadow: 0px 2px 20px 3px hsla(0, 0%, 72.2%, 0.5);
 }
 
 #about-right {
-  margin-top: 20px
+  margin-top: 20px;
 }
 
 #about-right span {
   margin-top: 20px;
-
 }
 
 #about-right p {
@@ -392,10 +387,10 @@ ul li a {
   background-color: #f7f7f7;
   position: relative;
   bottom: 5px;
-  margin-bottom: 20px
+  margin-bottom: 20px;
 }
 
-@media(min-width: 1100px) {
+@media (min-width: 1100px) {
   #about {
     display: flex;
     justify-content: space-evenly;
@@ -412,17 +407,17 @@ ul li a {
    PILOTS
    ========================================================================== */
 #pilots {
-  margin: 0 15px
+  margin: 0 15px;
 }
 
 #pilots h2 {
-  color: var(--blue)
+  color: var(--blue);
 }
 
 #pilots img {
   width: 90vw;
   margin: 0 auto;
-  box-shadow: 0px 2px 20px 3px hsla(0, 0%, 72.2%, 0.5)
+  box-shadow: 0px 2px 20px 3px hsla(0, 0%, 72.2%, 0.5);
 }
 
 #pilots h3 {
@@ -434,37 +429,37 @@ ul li a {
   font-size: 15px;
   color: #444 !important;
   position: relative;
-  bottom: 10px
+  bottom: 10px;
 }
 
 #pilots span {
   font-size: 15px;
   display: block;
   margin-bottom: 40px;
-  color: #777
+  color: #777;
 }
 
 #pilots a {
   display: block;
   font-size: 14px;
   text-decoration: none;
-  margin-bottom: 40px
+  margin-bottom: 40px;
 }
 
-@media(min-width: 968px) {
+@media (min-width: 968px) {
   #pilots-img-container {
     display: flex;
     justify-content: space-between;
   }
 
   #pilots-img-container div {
-    width: 22vw
+    width: 22vw;
   }
 
   #pilots img {
     width: 22vw;
     display: inline-block;
-    margin: 0 5px
+    margin: 0 5px;
   }
 
   #pilots {
@@ -475,10 +470,9 @@ ul li a {
 
   #pilots a {
     position: relative;
-    bottom: 20px
+    bottom: 20px;
   }
 }
-
 
 /* ==========================================================================
    TANDEM FLIGHTS
@@ -496,11 +490,11 @@ ul li a {
 }
 
 #tandem-flights h2 {
-  color: var(--blue)
+  color: var(--blue);
 }
 
 #tandem-flights p {
-  color: #f7f7f7
+  color: #f7f7f7;
 }
 
 #tandem-flights ul li {
@@ -512,7 +506,7 @@ ul li a {
   padding: 20px 15px 60px;
 }
 
-@media(min-width:1200px) {
+@media (min-width: 1200px) {
   #tandem-flights {
     width: 100%;
     display: flex;
@@ -537,7 +531,6 @@ ul li a {
 
   #tandem-flights-right {
     width: 64vw;
-
   }
 
   #tandem-flights-right {
@@ -550,9 +543,7 @@ ul li a {
   #tandem-flights-right h2 {
     margin-bottom: 0 !important;
   }
-
 }
-
 
 /* ==========================================================================
    SPECIALS
@@ -562,7 +553,7 @@ ul li a {
   background-color: var(--brown);
   position: relative;
   bottom: 40px;
-  padding: 0 15px
+  padding: 0 15px;
 }
 
 #specials-section ul {
@@ -571,7 +562,7 @@ ul li a {
 }
 
 #specials-section h4 {
-  color: var(--blue)
+  color: var(--blue);
 }
 
 #specials-section ul li,
@@ -581,7 +572,7 @@ ul li a {
 }
 
 #flight-areas {
-  padding-top: 20px
+  padding-top: 20px;
 }
 
 #flight-areas ol {
@@ -589,7 +580,7 @@ ul li a {
 }
 
 #specials {
-  padding-bottom: 40px
+  padding-bottom: 40px;
 }
 
 #flight-areas ol li {
@@ -611,7 +602,7 @@ ul li a {
 }
 
 #flight-prices li {
-  margin-bottom: 10px
+  margin-bottom: 10px;
 }
 
 #flight-center-ul {
@@ -626,7 +617,7 @@ ul li a {
 
 #micro-sd {
   color: var(--yellow) !important;
-  width: 350px
+  width: 350px;
 }
 
 .top-bottom-space {
@@ -659,19 +650,19 @@ ul li a {
 .move-right-1 {
   display: inline-block;
   position: relative;
-  left: 11px
+  left: 11px;
 }
 
 .move-right-2 {
   display: inline-block;
   position: relative;
-  left: 8px
+  left: 8px;
 }
 
 .move-right-3 {
   display: inline-block;
   position: relative;
-  left: 6px
+  left: 6px;
 }
 
 .price-list {
@@ -689,7 +680,6 @@ ul li a {
 
 .marginLeft10 {
   margin-left: 7px;
-
 }
 
 .price-list li {
@@ -698,8 +688,7 @@ ul li a {
   justify-content: space-between;
 }
 
-@media only screen and (min-width:968px) and (max-width:1320px) {
-
+@media only screen and (min-width: 968px) and (max-width: 1320px) {
   .price-list,
   #flight-center-ul li:first-child,
   #special-column li:first-child {
@@ -707,26 +696,24 @@ ul li a {
   }
 }
 
-@media(min-width:968px) {
+@media (min-width: 968px) {
   #specials-section {
     display: flex;
     justify-content: center;
     padding: 20px 0 40px;
-    border-top: 1px solid #fff
+    border-top: 1px solid #fff;
   }
 
   #flight-areas {
-    padding-top: 0px
+    padding-top: 0px;
   }
 
   #specials-section div {
     width: 30%;
   }
-
 }
 
 @media only screen and (max-width: 968px) {
-
   .price-list,
   #flight-center-ul li:first-child,
   #special-column li:first-child {
@@ -735,7 +722,6 @@ ul li a {
 }
 
 @media only screen and (min-width: 768px) and (max-width: 600px) {
-
   .price-list,
   #flight-center-ul li:first-child,
   #special-column li:first-child {
@@ -744,7 +730,6 @@ ul li a {
 }
 
 @media only screen and (max-width: 600px) {
-
   .price-list,
   #flight-center-ul li:first-child,
   #special-column li:first-child {
@@ -763,11 +748,11 @@ ul li a {
 }
 
 #gift-card h3 {
-  color: var(--blue)
+  color: var(--blue);
 }
 
 #gift-card p {
-  color: #fff
+  color: #fff;
 }
 
 /* #gift-card a {
@@ -805,10 +790,10 @@ ul li a {
 
 #gift-card-right img {
   width: 100%;
-  margin-top: 40px
+  margin-top: 40px;
 }
 
-@media(min-width: 968px) {
+@media (min-width: 968px) {
   #gift-card {
     display: flex;
     justify-content: space-evenly;
@@ -830,14 +815,13 @@ ul li a {
     max-width: 100%;
     position: relative;
     top: 50px;
-
   }
 
   #gift-card-right {
     position: relative;
     bottom: 40px;
     left: 60px;
-    width: 100%
+    width: 100%;
   }
 
   #contact-gift {
@@ -851,11 +835,11 @@ ul li a {
    ========================================================================== */
 .gallery {
   position: relative;
-  bottom: 80px
+  bottom: 80px;
 }
 
 .gallery-item {
-  padding: 3px
+  padding: 3px;
 }
 
 .gallery-item img {
@@ -863,7 +847,7 @@ ul li a {
   height: auto;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .gallery {
     display: flex;
   }
@@ -891,35 +875,35 @@ summary {
   position: relative;
 }
 
-details>summary::after {
+details > summary::after {
   position: absolute;
   content: "+";
   right: 20px;
 }
 
-details[open]>summary::after {
+details[open] > summary::after {
   position: absolute;
   content: "-";
   right: 20px;
 }
 
-details>summary::-webkit-details-marker {
+details > summary::-webkit-details-marker {
   display: none;
 }
 
-details[open] summary~* {
-  animation: sweep .5s ease-in-out;
+details[open] summary ~ * {
+  animation: sweep 0.5s ease-in-out;
 }
 
 @keyframes sweep {
   0% {
     opacity: 0;
-    margin-top: -10px
+    margin-top: -10px;
   }
 
   100% {
     opacity: 1;
-    margin-top: 0px
+    margin-top: 0px;
   }
 }
 
@@ -930,13 +914,11 @@ details[open] summary~* {
   bottom: 20px;
 }
 
-@media(min-width: 968px) {
+@media (min-width: 968px) {
   #faq {
     margin: 60px 20vw 60px;
-
   }
 }
-
 
 /* ==========================================================================
    VIDEO HOME
@@ -949,12 +931,11 @@ details[open] summary~* {
 #video-home iframe {
   margin-bottom: 20px;
   width: 100%;
-  height: 350px
+  height: 350px;
 }
 
-@media(min-width: 968px) {
+@media (min-width: 968px) {
   #video-home {
-
     margin: 60px 0px 60px 23px;
     display: flex;
     justify-content: center;
@@ -964,7 +945,7 @@ details[open] summary~* {
   #video-home iframe {
     margin-bottom: 20px;
     width: 33%;
-    height: 360px
+    height: 360px;
   }
 }
 
@@ -1010,11 +991,9 @@ details[open] summary~* {
   text-decoration: none;
 }
 
-
 .cta a:hover {
-  color: #fafafa
+  color: #fafafa;
 }
-
 
 #social-icons {
   display: flex;
@@ -1025,24 +1004,22 @@ details[open] summary~* {
 
 #social-icons img {
   display: inline-block;
-  margin: 0 5px
+  margin: 0 5px;
 }
 
 .cta {
-  margin-top: 40px
+  margin-top: 40px;
 }
 
 .cta h4 {
   color: #fff;
 }
 
-
-@media(min-width: 968px) {
+@media (min-width: 968px) {
   #contact {
     margin: 120px 0vw 0px;
     border-radius: 8px;
     box-shadow: 0px 2px 20px 3px rgba(255, 199, 199, 0.8);
-
   }
 
   #contact-footer p {
@@ -1064,26 +1041,11 @@ details[open] summary~* {
   }
 }
 
-
 #whatsapp-footer {
   position: fixed;
   bottom: 20px;
-  right: 20px
+  right: 20px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -1178,9 +1140,9 @@ details[open] summary~* {
 }
 
 @media print,
-(-webkit-min-device-pixel-ratio: 1.25),
-(min-resolution: 1.25dppx),
-(min-resolution: 120dpi) {
+  (-webkit-min-device-pixel-ratio: 1.25),
+  (min-resolution: 1.25dppx),
+  (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
 
@@ -1191,7 +1153,6 @@ details[open] summary~* {
    ========================================================================== */
 
 @media print {
-
   *,
   *::before,
   *::after {
@@ -1314,7 +1275,7 @@ span.review-profile-image img {
   margin: 10px;
   display: block;
   width: 31%;
-  background-color: #EFEFEF;
+  background-color: #efefef;
   padding: 20px;
   border-radius: 12px;
   box-sizing: border-box;
@@ -1331,7 +1292,6 @@ span.review-profile-image img {
   box-shadow: 2px 0px 10px 1px rgb(0 0 0 / 15%);
   cursor: pointer;
 }
-
 
 .review-meta,
 .review-stars {
@@ -1376,7 +1336,7 @@ span.review-profile-image img {
 }
 
 .review-stars ul li i {
-  color: #F6BB06;
+  color: #f6bb06;
   font-size: 27px;
   font-style: normal;
 }
@@ -1399,7 +1359,6 @@ span.review-profile-image img {
   margin-bottom: 0 !important;
   margin-top: 0 !important;
 }
-
 
 .accordian {
   padding: 10px 20px !important;
@@ -1436,9 +1395,150 @@ span.review-profile-image img {
   border-top-left-radius: 0 !important;
   border-top-right-radius: 0 !important;
 }
+/* partner */
 
-
-
+.partner-main {
+  max-width: 100%;
+  position: unset;
+  margin: 0 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.partner-banner {
+  background-image: url("../img/partner-banner.jpg");
+  background-size: cover;
+  background-position: 100% 61%;
+  width: 100%;
+  height: 500px;
+  display: flex;
+  align-items: end;
+  justify-content: start;
+  padding: 40px 100px;
+  box-sizing: border-box;
+}
+.partner-banner-details {
+  max-width: 650px;
+}
+.partner-banner-details h5 {
+  color: #fff;
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 600;
+  margin: 0 !important;
+}
+.partner-container {
+  padding: 40px 55px 20px 55px;
+  width: 100%;
+  max-width: 90%;
+  box-sizing: border-box;
+  margin: auto;
+}
+.partner-container .slick-dots {
+  left: 0;
+}
+.partner-container .slick-dots li button:before {
+  font-size: 11px !important;
+}
+.partner-container .slick-prev:before, .slick-next:before {
+  font-family: 'slick';
+  font-size: 32px !important;
+  line-height: 1;
+  opacity: .75 !important;
+  color: #010101 !important;
+}
+.partner-banner-details .partner-subtitle {
+  margin: 0 !important;
+}
+.partner-banner-details p,
+.partner-subtitle {
+  color: #fff;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+.partner-logo-container {
+  padding: 10px 20px;
+}
+.partner-logo-content {
+  /* width: 60%; */
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* padding:0 20px; */
+}
+.partner-link-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.partner-logo {
+  width: 200px;
+  max-width: 200px;
+  min-width: 200px;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+}
+.partner-logo img {
+  max-width: 100%;
+  height: auto !important;
+  object-fit: contain;
+}
+.partner-logo-content .title {
+  color: #141414;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+.partner-logo-content .desc {
+  color: #141414;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0px;
+}
+.content-equal-height {
+  min-height: 180px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+.our-partners h2 {
+  text-align: center;
+  font-size: 32px;
+}
+.our-partners .divider {
+  margin: auto;
+}
+.our-partners .partner-text {
+  color: #444444 !important;
+}
+.partner-image img {
+  max-width: 350px;
+}
+.partner-text a,
+.partner-link {
+  background: #edb905;
+  padding: 10px 18px;
+  color: #fff;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.partner-text p {
+  line-height: 24px;
+}
 @media only screen and (max-width: 1240px) {
   .review-item {
     width: 47%;
@@ -1452,10 +1552,28 @@ span.review-profile-image img {
   .review-stars ul li i {
     font-size: 24px;
   }
+  .partner-container {
+    max-width: 100%;
+  }
+  .content-equal-height {
+    min-height: 220px;
+  }
+  .partner-container .slick-next{right: 30px !important;}
+  .partner-container .slick-prev {left: 20px !important;}
+  .partner-container .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 33px !important;
+  }
+  .partner-banner {
+    padding: 40px 60px;
+  }
 }
 @media only screen and (max-width: 968px) {
   #google-reviews-wrapper {
     padding-bottom: 50px;
+  }
+  .partner-banner {
+    padding: 30px;
   }
   #google-reviews-wrapper {
     width: 80%;
@@ -1474,6 +1592,32 @@ span.review-profile-image img {
     width: 180px;
   }
 }
+@media only screen and (max-width: 768px) {
+  .partner-container .slick-next{right: 22px !important;}
+  .partner-container .slick-prev {left: 15px !important;}
+  .partner-container .slick-prev:before, .slick-next:before {
+    font-family: 'slick';
+    font-size: 26px !important;
+  }
+  .partner-container {
+    padding: 40px 35px 10px 30px;
+  }
+  .partner-banner-details,
+  .partner-logo-content {
+    max-width: 100%;
+    width: 100%;
+  }
+  .partner-logo-container,
+  .partner-logo-content {
+    flex-direction: column;
+  }
+  .content-equal-height {
+    min-height: unset;
+  }
+  .partner-banner-details p, .partner-subtitle {
+    font-size: 14px;
+  }
+}
 @media only screen and (max-width: 767px) {
   #google-reviews-wrapper {
     width: 90%;
@@ -1489,5 +1633,37 @@ span.review-profile-image img {
   .panel p {
     width: unset;
     left: 0px !important;
+  }
+  /* .partner-item {
+    flex-wrap: wrap;
+  } */
+  .partner-image img {
+    max-width: 100%;
+  }
+  .partner-banner {
+    height: unset;
+    padding: 30px;
+  }
+  .partner-link-wrap {
+    margin-top: 15px;
+  }
+  .partner-logo-container{
+    padding: 10px 25px !important;
+  }
+  .partner-logo-content {
+    padding: 0 !important;
+  }
+  .partner-logo {
+    width: 300px;
+    max-width: 300px;
+    margin-right: 0px;
+    min-width: 300px;
+  }
+  .partner-logo-content .desc , .partner-logo-content .title {
+    text-align: center;
+    font-size: 14px;
+  }
+  .partner-logo {
+    height: 130px;
   }
 }
